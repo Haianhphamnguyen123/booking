@@ -1,0 +1,26 @@
+[
+    {
+        "flight_number": "AA123",
+        "origin": "New York",
+        "destination": "Los Angeles",
+        "departure_time": "2022-01-01T08:00:00Z",
+        "arrival_time": "2022-01-01T11:00:00Z",
+        "price": 300.00
+    },
+    {
+        "flight_number": "UA456",
+        "origin": "Chicago",
+        "destination": "San Francisco",
+        "departure_time": "2022-01-02T09:00:00Z",
+        "arrival_time": "2022-01-02T12:30:00Z",
+        "price": 400.00
+    },
+    {
+        "flight_number": "DL789",
+        "origin": "Atlanta",
+        "destination": "New York",
+        "departure_time": "2022-01-03T10:00:00Z",
+        "arrival_time": "2022-01-03T13:00:00Z",
+        "price": 250.00
+    }
+]

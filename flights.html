@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Flights</h1>
+  {% if flights %}
+    <table>
+      <tr>
+        <th>Airline</th>
+        <th>Flight Number</th>
+        <th>Origin</th>
+        <th>Destination</th>
+        <th>Departure Date</th>
+        <th>Departure Time</th>
+        <th>Price</th>
+        <th>Book</th>
+      </tr>
+      {% for flight in flights %}
+        <tr>
+          <td>{{ flight.airline }}</td>
+          <td>{{ flight.flight_number }}</td>
+          <td>{{ flight.origin }}</td>
+          <td>{{ flight.destination }}</td>
+          <td>{{ flight.departure_date }}</td>
+          <td>{{ flight.departure_time }}</td>
+          <td>{{ flight.price }}</td>
+          <td><a href="/book/{{ flight.flight_number }}">Book</a></td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No flights found for your search criteria.</p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Book Flight</h1>
+  <p>Flight Details:</p>
+  <table>
+    <tr>
+      <th>Airline</th>
+      <td>{{ flight.airline }}</td>
+    </tr>
+    <tr>
+      <th>Flight Number</th>
+      <td>{{ flight.flight_number }}</td>
+    </tr>
+    <tr>
+      <th>Origin</th>
+      <td>{{ flight.origin }}</td>
+    </tr>
+    <tr>
+      <th>Destination</th>
+      <td>{{ flight.destination }}</td>
+    </tr>
+    <tr>
+      <th>Departure Date</th>
+      <td>{{ flight.departure_date }}</td>
+    </tr>
+    <tr>
+      <th>Departure Time</th>
+      <td>{{ flight.departure_time }}</td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>{{ flight.price }}</td>
